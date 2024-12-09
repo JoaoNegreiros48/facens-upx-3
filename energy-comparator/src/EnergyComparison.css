@@ -1,0 +1,173 @@
+/* src/components/EnergyComparison.css */
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.comparison-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1, .MuiTypography-h4 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+
+
+.energy-selectors {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.selector-group {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.energy-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border: 2px solid #444;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.energy-select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.btn, .MuiButton-containedPrimary {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50 !important;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:hover, .MuiButton-containedPrimary:hover {
+  background-color: #45a049 !important;
+  transform: scale(1.05);
+}
+
+.comparison-results {
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #2a2a2a; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: left;
+  color: #e0e0e0;
+}
+
+.card h5 {
+  font-size: 1.5rem;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #000000;
+  margin: 5px 0;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+
+.chat-box {
+  border: 1px solid #444;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #1e1e1e;
+  margin-top: 20px;
+}
+
+.chat-box h6 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.chat-box .messages {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.chat-box .messages .user {
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+  text-align: right;
+  background-color: #333333;
+}
+
+.chat-box .messages .bot {
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+  text-align: left;
+  background-color: #444444;
+}
+
+.chat-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border: 2px solid #444;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-box input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.chat-box button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50 !important;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.chat-box button:hover {
+  background-color: #45a049 !important;
+  transform: scale(1.05);
+}
